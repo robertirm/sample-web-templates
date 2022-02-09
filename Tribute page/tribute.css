@@ -1,0 +1,102 @@
+html {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(266deg,#c75d31, #783530,  #4a5c6b, #50667e, #252d43);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(266deg,#c75d31, #783530,  #4a5c6b, #50667e, #252d43); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 10px;
+    background-size: 400% 400%;
+    -webkit-animation: GradientMovingBG 6s ease infinite;
+    -moz-animation: GradientMovingBG 6s ease infinite;
+    -o-animation: GradientMovingBG 6s ease infinite;
+    animation: GradientMovingBG 6s ease infinite;
+}
+
+/*background gradient animation*/
+@-webkit-keyframes GradientMovingBG {
+    0%{background-position:13% 0%}
+    50%{background-position:88% 100%}
+    100%{background-position:13% 0%}
+}
+@-moz-keyframes GradientMovingBG {
+    0%{background-position:13% 0%}
+    50%{background-position:88% 100%}
+    100%{background-position:13% 0%}
+}
+@-o-keyframes GradientMovingBG {
+    0%{background-position:13% 0%}
+    50%{background-position:88% 100%}
+    100%{background-position:13% 0%}
+}
+@keyframes GradientMovingBG {
+    0%{background-position:13% 0%}
+    50%{background-position:88% 100%}
+    100%{background-position:13% 0%}
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px;
+    color : gainsboro;
+
+}
+#headline {
+    margin: 100px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 80%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15%;
+  }
+
+#img-caption {
+    font-style: italic;
+    color:#252d43;
+}
+#title {
+    color: whitesmoke;
+}
+
+.no-bullets {
+    list-style-type: none;
+}
+
+li {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 100px;
+}
+
+.chapter-title {
+    margin-left: 30px;
+    text-align: left;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+  }
+
+ #tribute-link {
+     color:white;
+ } 
+
+ #tribute-link:hover {
+     color: grey;
+ }

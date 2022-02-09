@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Valorant Survey</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>    
+    <div class="container">
+    <header>
+        <h1 id="title">
+        Valorant Survey Form
+    </h1>
+
+    <p id="description">
+        Thank you for taking the time to help us improve the platform!
+    </p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group">
+            <label id="email-label">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="8" max="99" class="form-control" placeholder="Age" />
+        </div>
+
+        <div class="form-group">
+            <p>Favorite role in a team?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select favorite role</option>
+                <option value="duelist">Duelist</option>
+                <option value="controller">Controller</option>
+                <option value="sentinel">Sentinel</option>
+                <option value="inintiator">Initiator</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Would you recommend Valorant to a friend?</p>
+            <label>
+                <input type="radio" name="user-recommend" value="definetly" class="input-radio"
+                    checked />Definetly</label>
+            <label>
+                <input type="radio" name="user-recommend" value="maybe" class="input-radio" />Maybe</label>
+
+            <label>
+                <input type="radio" name="user-recommend" value="not sure" class="input-radio" />Not Sure</label>
+
+            <label>
+                <input type="radio" name="user-recommend" value="absolutely not" class="input-radio" />Absolutely
+                Not</label>
+        </div>
+
+        <div class="form-group">
+            <p>What are your favorite agents?</p>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="brimstone" />Brimstone</label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="phoenix" />Phoenix</label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="sage" />Sage</label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="sova" />Sova</label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="viper" />Viper</label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="cypher" />Cypher</label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="reyna" />Reyna</label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="killjoy" />Killjoy</label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="breach" />Breach</label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="omen" />Omen</label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="jett" />Jett</label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="raze" />Raze</label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="skye" />Skye</label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="yoru" />Yoru</label>
+
+        </div>
+
+        <div class="form-group">
+            <p>What is your favorite map?</p>
+            <select id="dropdown-maps" name="maps" class="form-control">
+                <option disabled selected value>Select your favorite map</option>
+                <option value="bind">Bind</option>
+                <option value="haven">Haven</option>
+                <option value="split">Split</option>
+                <option value="ascend">Ascend</option>
+                <option value="icebox">Icebox</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+    </div>
+</body>
+
+</html>
